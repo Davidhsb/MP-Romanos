@@ -20,6 +20,7 @@ TEST_CASE( "Numeros romanos - algarismos invalidos", "[romanos]" ) {
     REQUIRE(validate_convert("XVIV") == -1);
     REQUIRE(validate_convert("XXXXXX") == -1);
     REQUIRE(validate_convert("XVIX") == -1);
+    REQUIRE(validate_convert("MMMMMMM") == -1);
 }
 TEST_CASE( "Numeros romanos - algarismos validos", "[romanos]" ){
     REQUIRE(validate_convert("XV") == 15);
