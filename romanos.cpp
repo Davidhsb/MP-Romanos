@@ -20,3 +20,9 @@ string decimal_para_romanos(int num) {
 }
 
 
+
+int validate_convert(string str) {
+  int guess = romanos_para_decimal(str);
+  if(str == decimal_para_romanos(guess) && guess <= 3000) return guess;
+  else return -1;
+}
