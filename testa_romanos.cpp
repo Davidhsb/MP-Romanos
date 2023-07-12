@@ -31,4 +31,5 @@ TEST_CASE( "Numeros romanos - algarismos validos", "[romanos]" ){
     REQUIRE(validate_convert("DCXXXVII") == 637);
     REQUIRE(validate_convert("MMDI") == 2501);
     REQUIRE(validate_convert("CCC") == 300);
+    REQUIRE(validate_convert("XXX") == 30);
 }
