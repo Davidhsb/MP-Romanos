@@ -37,4 +37,5 @@ TEST_CASE( "Numeros romanos - algarismos validos", "[romanos]" ){
     REQUIRE(validate_convert("IX") == 9);
     REQUIRE(validate_convert("III") == 3);
     REQUIRE(validate_convert("XI") == 11);
+    REQUIRE(validate_convert("VI") == 6);
 }
